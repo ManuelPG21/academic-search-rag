@@ -39,7 +39,7 @@ def create_app(engine: ScholarSearch | None = None) -> FastAPI:
         app.state.engine = engine or ScholarSearch.from_disk(DATA_DIR, default_llm())
         yield
 
-    app = FastAPI(title="Scholar RAG", version="0.1.0", lifespan=lifespan)
+    app = FastAPI(title="arXiv RAG Search", version="0.1.0", lifespan=lifespan)
 
     @app.get("/health")
     def health(request: Request):

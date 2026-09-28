@@ -84,7 +84,7 @@ def main() -> None:
     args = ap.parse_args()
 
     mlflow.set_tracking_uri(f"sqlite:///{(ROOT / 'mlflow.db').as_posix()}")
-    mlflow.set_experiment("scholar-rag")
+    mlflow.set_experiment("arxiv-rag-search")
     llm = OllamaLLM() if args.llm == "ollama" else ExtractiveLLM()
     engine = ScholarSearch.from_disk(ROOT / "data", llm)
 

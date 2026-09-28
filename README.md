@@ -1,4 +1,6 @@
-# Scholar RAG: hybrid academic search with evaluated, cited answers
+# arXiv RAG Search: hybrid paper search with evaluated, cited answers
+
+> **Personal project.** Built independently in my own time with public data. It is not affiliated with, commissioned by, or derived from any employer, client or academic institution.
 
 A small, production-shaped **retrieval-augmented generation (RAG)** service over 3,126 recent arXiv papers
 (complex systems, adaptation & self-organization, information retrieval, statistical ML).
@@ -63,8 +65,8 @@ pytest -q
 Docker:
 
 ```bash
-docker build -t scholar-rag .
-docker run -p 8000:8000 -e LLM_BACKEND=ollama scholar-rag
+docker build -t arxiv-rag-search .
+docker run -p 8000:8000 -e LLM_BACKEND=ollama arxiv-rag-search
 ```
 
 ## Structure
@@ -83,4 +85,4 @@ tests/                unit and API tests (no model download needed)
 
 ## Author
 
-Manuel Alejandro Polo González · [Portfolio](https://manuelpg21.github.io/data-ml-portfolio/) · [LinkedIn](https://www.linkedin.com/in/manuel-alejandro-p-339754118)
+Manuel Alejandro Polo González · [LinkedIn](https://www.linkedin.com/in/manuel-alejandro-p-339754118)
