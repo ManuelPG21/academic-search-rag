@@ -1,0 +1,47 @@
+{
+  "corpus_size": 3126,
+  "n_queries": 500,
+  "retrieval": {
+    "bm25": {
+      "recall_at_1": 0.928,
+      "recall_at_5": 0.97,
+      "recall_at_10": 0.974,
+      "mrr_at_10": 0.9468333333333334,
+      "ndcg_at_10": 0.9536505988394373,
+      "mrr_ci_low": 0.9276666666666668,
+      "mrr_ci_high": 0.9630833333333333,
+      "latency_p50_ms": 6.729599990649149,
+      "latency_p95_ms": 11.670770001364867
+    },
+    "dense": {
+      "recall_at_1": 0.856,
+      "recall_at_5": 0.946,
+      "recall_at_10": 0.964,
+      "mrr_at_10": 0.8985269841269842,
+      "ndcg_at_10": 0.9147210250417949,
+      "mrr_ci_low": 0.8757626190476191,
+      "mrr_ci_high": 0.9203900595238096,
+      "latency_p50_ms": 5.581150035141036,
+      "latency_p95_ms": 9.286504980991593
+    },
+    "hybrid": {
+      "recall_at_1": 0.924,
+      "recall_at_5": 0.974,
+      "recall_at_10": 0.984,
+      "mrr_at_10": 0.945563492063492,
+      "ndcg_at_10": 0.9549742686141173,
+      "mrr_ci_low": 0.9284405158730158,
+      "mrr_ci_high": 0.9619165079365081,
+      "latency_p50_ms": 13.957599963760003,
+      "latency_p95_ms": 18.95636001427192
+    }
+  },
+  "generation": {
+    "extractive": {
+      "citation_validity": 1.0,
+      "target_paper_cited": 0.9,
+      "answers_with_citations": 1.0,
+      "generation_p50_ms": 0.1
+    }
+  }
+}
